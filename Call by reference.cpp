@@ -1,0 +1,38 @@
+//EXPERIMENT 10
+//NAME: GANDLURI SAI TEJAS
+//PRN: 24070123045
+//Class: ENTC A2
+//Problem statement:- Write a code to perform call by reference.
+
+
+#include <iostream>
+using namespace std;
+ void swap(int &x, int &y){
+        int temp=x;
+        x=y;
+        y=temp;
+        return ;
+    }
+
+int main() {
+    int a=12; int b=21;
+    
+    cout<<"Original value of a is:"<<a<<endl;
+    
+    cout<<"original value of b is:"<<b<<endl;
+    swap(a,b);
+    cout<<"Swapped value of a is:"<<a<<endl;
+    
+    cout<<"Swapped value of b is:"<<b<<endl;
+
+    return 0;
+}
+
+
+/*Output:-
+Original value of a is:12
+original value of b is:21
+Swapped value of a is:21
+Swapped value of b is:12
+
+*/
